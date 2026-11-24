@@ -1,9 +1,6 @@
-"""ONE-COMMAND project runner: python run_all.py
-
-Does not replace teammate's checkpoint modules. Reads games.csv (gitignored), builds pregame
-features, runs the 5 project experiments, writes reproducible tables/charts to results/.
-"""
 from __future__ import annotations
+import os
+os.environ.setdefault("MPLBACKEND", "Agg")
 import sys, time, traceback, argparse
 import pandas as pd
 from src import config
